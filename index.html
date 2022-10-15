@@ -24,56 +24,69 @@
       </nav>
     </header>
     <main>
-      <section id="form-section">
-        <div>
+      <section id="form-section" class="form-container">
+        <div class="card-form">
           <form name="newAddress">
-            <div>
+            <div class="form-control">
               <label for="cep">CEP:</label>
-              <input type="text" name="cep" id="cep" placeholder="CEP" />
+              <input
+                type="text"
+                name="cep"
+                id="cep"
+                class="form-input"
+                placeholder="CEP"
+              />
+              <div class="error-message">Campo requerido</div>
             </div>
-            <div>
+            <div class="form-control">
               <label for="street">Logradouro:</label>
               <input
                 type="text"
                 name="street"
                 id="street"
+                class="form-input"
                 placeholder="Logradouro"
+                disabled
               />
             </div>
-            <div>
+            <div class="form-control">
               <label for="number">Número:</label>
               <input
                 type="text"
                 name="number"
                 id="number"
+                class="form-input"
                 placeholder="Número"
               />
+              <div class="error-message">Campo requerido</div>
             </div>
-            <div>
+            <div class="form-control">
               <label for="cidade">Cidade:</label>
               <input
                 type="text"
                 name="cidade"
                 id="cidade"
+                class="form-input"
                 placeholder="Cidade"
+                disabled
               />
             </div>
-            <div>
-              <button type="submit">Salvar</button>
-              <button>Limpar</button>
+            <div class="btn-container">
+              <button class="btn btn-left" type="submit">Salvar</button>
+              <button class="btn btn-right">Limpar</button>
             </div>
           </form>
         </div>
       </section>
 
-      <section id="list-section">
-        <div>
+      <section id="list-section" class="list-container">
+        <div class="card-list-item">
           <h3>São Paulo</h3>
           <p>Rua dos Jardins, 720</p>
           <p>11200-345</p>
         </div>
 
-        <div>
+        <div class="card-list-item">
           <h3>São Paulo</h3>
           <p>Rua dos Jardins, 720</p>
           <p>11200-345</p>
